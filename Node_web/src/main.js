@@ -40,53 +40,68 @@ TypeChecking ex)TypeScript(타입을 정의해줌)
 
 // prototype
 
-function Person(name) {
-  this.name = name
-}
+// function Person(name) {
+//   this.name = name
+// }
 
-function Student(name) {
-  this.__proto__.constructor(name)
-}
+// function Student(name) {
+//   this.__proto__.constructor(name)
+// }
 
-Person.prototype.greet = function greet() {
-  return `Hi , ${this.name} !`
-}
+// Person.prototype.greet = function greet() {
+//   return `Hi , ${this.name} !`
+// }
 
-Student.prototype.study = function study() {
-  return `${this.name} is Studying`
-}
+// Student.prototype.study = function study() {
+//   return `${this.name} is Studying`
+// }
 
-Object.setPrototypeOf(Student.prototype, Person.prototype) //상속 해준다.
+// Object.setPrototypeOf(Student.prototype, Person.prototype) //상속 해준다.
 
-const me = new Student('Chaewoon')
-console.log(me instanceof Student)
-console.log(me instanceof Person)
+// const me = new Student('Chaewoon')
+// console.log(me instanceof Student)
+// console.log(me instanceof Person)
 
-const anotherPerson = new Person('FOO')
-console.log(anotherPerson instanceof Student)
+// const anotherPerson = new Person('FOO')
+// console.log(anotherPerson instanceof Student)
 
-const a = [1, 2, 3, 4, 5]
+// const a = [1, 2, 3, 4, 5]
 
-const [head, ...rest] = a
-console.log(head, rest)
+// const [head, ...rest] = a
+// console.log(head, rest)
 
-const paerSonalData = {
-  email: '1',
-  password: '****',
-}
+// const paerSonalData = {
+//   email: '1',
+//   password: '****',
+// }
 
-const publicData = {
-  nickname: '3',
-}
+// const publicData = {
+//   nickname: '3',
+// }
 
-const overrides = {
-  email: '12341234',
-}
+// const overrides = {
+//   email: '12341234',
+// }
 
-const user = {
-  ...paerSonalData,
-  ...publicData,
-  ...overrides,
-}
+// const user = {
+//   ...paerSonalData,
+//   ...publicData,
+//   ...overrides,
+// }
 
-console.log(user)
+// console.log(user);
+
+/**
+ * 다음 문제를 풀어봅시다.
+ *
+ * A. 30대 미만이 한명이라도ㅡ사는 모든 도시
+ * B. 각 도시별로 개와 고양이를 키우는 사람들의 수
+ */
+
+// function solveA(){
+//   /** @type {string[]} */
+//   class cities = []
+//   for (const person of people){
+//     if(person.)
+//   }
+// }
